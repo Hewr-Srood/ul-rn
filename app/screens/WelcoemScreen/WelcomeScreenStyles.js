@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import colors from '../../config/colors';
 
 const WelcomeScreenStyles = StyleSheet.create({
   background: {
@@ -7,20 +6,19 @@ const WelcomeScreenStyles = StyleSheet.create({
     justifyContent: 'flex-end',
     alignItems: 'center',
   },
-  logoContainer: { position: 'absolute', top: '40%', alignItems: 'center' },
+  logoContainer: { position: 'absolute', top: '20%', alignItems: 'center' },
+  tagLine: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    paddingVertical: 20,
+  },
   logo: {
     width: 100,
     height: 100,
   },
-  loginBtn: {
+  buttonsContainer: {
+    padding: 20,
     width: '100%',
-    height: 70,
-    backgroundColor: colors.primary,
-  },
-  registerBtn: {
-    width: '100%',
-    height: 70,
-    backgroundColor: colors.secondary,
   },
 });
 export default WelcomeScreenStyles;

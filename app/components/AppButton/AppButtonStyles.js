@@ -3,7 +3,7 @@ import colors from '../../config/colors';
 
 const AppButtonStyles = StyleSheet.create({
   button: {
-    backgroundColor: colors.primary,
+    marginVertical: 10,
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
