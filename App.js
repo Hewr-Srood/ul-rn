@@ -2,6 +2,7 @@ import React from 'react';
 import { Platform, StatusBar, View, StyleSheet } from 'react-native';
 import { hasNotch } from 'react-native-device-info';
 import Card from './app/components/Card/Card';
+import DetailsListScreen from './app/screens/DetailsListScreen/DetailsListScreen';
 import WelcomeScreen from './app/screens/WelcoemScreen/WelcomeScreen';
 
 const App = () => (
@@ -10,14 +11,10 @@ const App = () => (
       backgroundColor="transparent"
       translucent={true}
       barStyle="dark-content"
-      style={{ styles }}
+      style={styles.app}
     />
-    <View style={[styles.app, { backgroundColor: '#f8f4f4', padding: 20 }]}>
-      <Card
-        title="Red Jacked for sale"
-        subTitle="$100"
-        image={require('./app/assets/jacket.jpg')}
-      />
+    <View>
+      <DetailsListScreen />
     </View>
   </>
 );
