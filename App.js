@@ -3,7 +3,7 @@ import { Platform, StatusBar, View, StyleSheet } from 'react-native';
 import { hasNotch } from 'react-native-device-info';
 import Card from './app/components/Card/Card';
 import DetailsListScreen from './app/screens/DetailsListScreen/DetailsListScreen';
-import WelcomeScreen from './app/screens/WelcoemScreen/WelcomeScreen';
+import ViewImageScreen from './app/screens/ViewImageScreen/ViewImageScreen';
 
 const App = () => (
   <>
@@ -14,7 +14,7 @@ const App = () => (
       style={styles.app}
     />
     <View>
-      <DetailsListScreen />
+      <ViewImageScreen />
     </View>
   </>
 );
