@@ -4,6 +4,7 @@ import colors from '../../config/colors';
 const ListItemStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    padding: 15,
   },
   userContainer: {
     marginVertical: 40,

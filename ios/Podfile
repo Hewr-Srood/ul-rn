@@ -20,6 +20,8 @@ target 'ul_rn' do
 
   pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
 
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   target 'ul_rnTests' do
     inherit! :complete
     # Pods for testing

@@ -1,8 +1,9 @@
 import React from 'react';
-import { Platform, StatusBar, View, StyleSheet } from 'react-native';
+import { StatusBar, SafeAreaView } from 'react-native';
 import { hasNotch } from 'react-native-device-info';
 import Card from './app/components/Card/Card';
 import DetailsListScreen from './app/screens/DetailsListScreen/DetailsListScreen';
+import MessagesScreen from './app/screens/MessagesScreen/MessagesScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen/ViewImageScreen';
 
 const App = () => (
@@ -11,16 +12,9 @@ const App = () => (
       backgroundColor="transparent"
       translucent={true}
       barStyle="dark-content"
-      style={styles.app}
     />
-    <View>
-      <ViewImageScreen />
-    </View>
+    <MessagesScreen />
   </>
 );
-const styles = StyleSheet.create({
-  app: {
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight + 20 : 0,
-  },
-});
+
 export default App;

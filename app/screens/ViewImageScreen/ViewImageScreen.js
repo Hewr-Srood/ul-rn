@@ -10,12 +10,12 @@ const ViewImageScreen = () => {
         <View
           style={[ViewImageScreenStyles.closeIcon, ViewImageScreenStyles.icon]}
         >
-          <Icon name="close" color="white" size={35} />
+          <Icon name="close" color="white" size={33} />
         </View>
         <View
           style={[ViewImageScreenStyles.icon, ViewImageScreenStyles.deleteIcon]}
         >
-          <Icon name="delete" color="red" size={35} />
+          <Icon name="delete-outline" color="white" size={33} />
         </View>
         <Image
           resizeMode="contain"
