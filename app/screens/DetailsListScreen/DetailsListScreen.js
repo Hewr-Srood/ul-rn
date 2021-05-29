@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { View, Image } from 'react-native';
 import AppText from '../../components/AppText/AppText';
 import ListItem from '../../components/ListItem/ListItem';
+import Screen from '../../components/Screen/Screen';
 import DetailsListScreenStyles from './DetailslistcreenStyles';
 
 export class DetailsListScreen extends Component {
   render() {
     return (
-      <View>
+      <Screen>
         <Image
           style={DetailsListScreenStyles.image}
           source={require('../../assets/jacket.jpg')}
@@ -25,7 +26,7 @@ export class DetailsListScreen extends Component {
             />
           </View>
         </View>
-      </View>
+      </Screen>
     );
   }
 }

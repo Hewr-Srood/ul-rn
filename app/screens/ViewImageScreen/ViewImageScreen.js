@@ -2,10 +2,11 @@ import React from 'react';
 import { Image, View } from 'react-native';
 import ViewImageScreenStyles from './ViewImageScreenStyles';
 import { Icon } from 'react-native-elements';
+import Screen from '../../components/Screen/Screen';
 
 const ViewImageScreen = () => {
   return (
-    <>
+    <Screen>
       <View style={ViewImageScreenStyles.container}>
         <View
           style={[ViewImageScreenStyles.closeIcon, ViewImageScreenStyles.icon]}
@@ -23,7 +24,7 @@ const ViewImageScreen = () => {
           source={require('./../../assets/chair.jpg')}
         />
       </View>
-    </>
+    </Screen>
   );
 };
 
