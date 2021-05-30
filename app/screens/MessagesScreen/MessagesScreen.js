@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { FlatList } from 'react-native';
-
-import { SafeAreaView } from 'react-native-safe-area-context';
 import ListItem from '../../components/ListItem/ListItem';
 import ListItemDeleteAction from '../../components/ListItemDeleteAction/ListItemDeleteAction';
 import ListItemSeperator from '../../components/ListItemSeperator';

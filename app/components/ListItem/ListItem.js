@@ -6,15 +6,25 @@ import AppText from '../AppText/AppText';
 
 import ListItemStyles from './ListItemStyles';
 
-const ListItem = ({ image, title, subTitle, onPress, renderRightActions }) => {
+const ListItem = ({
+  image,
+  title,
+  subTitle,
+  onPress,
+  renderRightActions,
+  IconComponent,
+}) => {
   return (
     <Swipeable renderRightActions={renderRightActions}>
       <TouchableHighlight onPress={onPress} underlayColor={colors.light}>
         <View style={ListItemStyles.container}>
-          <Image style={ListItemStyles.image} source={image} />
-          <View>
+          {IconComponent}
+          {image && <Image style={ListItemStyles.image} source={image} />}
+          <View style={ListItemStyles.detailsContainer}>
             <AppText styles={ListItemStyles.title}>{title}</AppText>
-            <AppText styles={ListItemStyles.subTtile}> {subTitle}</AppText>
+            {subTitle && (
+              <AppText styles={ListItemStyles.subTtile}>{subTitle}</AppText>
+            )}
           </View>
         </View>
       </TouchableHighlight>
