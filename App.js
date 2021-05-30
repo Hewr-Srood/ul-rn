@@ -7,6 +7,7 @@ import ListItem from './app/components/ListItem/ListItem';
 import Screen from './app/components/Screen/Screen';
 import AccountScreen from './app/screens/AccountScreen/AccountScreen';
 import DetailsListScreen from './app/screens/DetailsListScreen/DetailsListScreen';
+import ListingsScreen from './app/screens/ListingsScreen/ListingsScreen';
 import MessagesScreen from './app/screens/MessagesScreen/MessagesScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen/ViewImageScreen';
 
@@ -17,7 +18,7 @@ const App = () => (
       translucent={true}
       barStyle="dark-content"
     />
-    <AccountScreen />
+    <ListingsScreen />
     {/* <ListItem
         title="My title "
         // subTitle="My subtitle"
