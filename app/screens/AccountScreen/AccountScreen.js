@@ -28,7 +28,7 @@ const AccountScreen = () => {
       <View style={AcountScreenStyles.container}>
         <ListItem
           title="Hewr Srood"
-          subTitle="hewr_s@outlookc.com"
+          subTitle="hewr_s@outlook.com"
           image={require('../../assets/hewr.jpg')}
         />
       </View>
