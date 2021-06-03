@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import colors from '../../config/colors';
+import deafultStyles from '../../config/deafultStyles';
 
 const AppButtonStyles = StyleSheet.create({
   button: {
@@ -11,7 +11,7 @@ const AppButtonStyles = StyleSheet.create({
     width: '100%',
   },
   title: {
-    color: colors.white,
+    color: deafultStyles.colors.white,
     fontSize: 18,
     textTransform: 'uppercase',
     fontWeight: 'bold',

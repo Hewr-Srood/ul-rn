@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native';
-import colors from '../../config/colors';
+import deafultStyles from '../../config/deafultStyles';
 
 const CardStyles = StyleSheet.create({
   card: {
     borderRadius: 15,
-    backgroundColor: colors.white,
+    backgroundColor: deafultStyles.colors.white,
     overflow: 'hidden',
     marginBottom: 20,
   },
@@ -19,7 +19,7 @@ const CardStyles = StyleSheet.create({
     marginBottom: 7,
   },
   subTitle: {
-    color: colors.secondary,
+    color: deafultStyles.colors.secondary,
     fontWeight: 'bold',
   },
 });

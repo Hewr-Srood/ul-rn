@@ -1,6 +1,7 @@
 import React from 'react';
 import { StatusBar, SafeAreaView } from 'react-native';
 import { hasNotch } from 'react-native-device-info';
+import AppTextInput from './app/components/AppTextInput/AppTextInput';
 import Card from './app/components/Card/Card';
 import CustomIcon from './app/components/CustomIcon/CustomIcon';
 import ListItem from './app/components/ListItem/ListItem';
@@ -18,7 +19,12 @@ const App = () => (
       translucent={true}
       barStyle="dark-content"
     />
-    <ListingsScreen />
+
+    {/* <ListingsScreen /> */}
+    <Screen>
+      <AppTextInput placeholder="Username" icon="email" />
+    </Screen>
+
     {/* <ListItem
         title="My title "
         // subTitle="My subtitle"
