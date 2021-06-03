@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import defaultStyles from '../../config/deafultStyles';
 
-const AppTextInputStyles = StyleSheet.create({
+const AppPickerStyles = StyleSheet.create({
   container: {
     backgroundColor: defaultStyles.colors.light,
     borderRadius: 25,
@@ -12,9 +12,19 @@ const AppTextInputStyles = StyleSheet.create({
     minHeight: 60,
     marginVertical: 10,
   },
+  closeBtn: {
+    alignItems: 'center',
+  },
+  closeText: {
+    paddingVertical: 20,
+    fontSize: 18,
+    color: defaultStyles.colors.danger,
+  },
   icon: {
     marginRight: 10,
   },
-  textInput: defaultStyles.text,
+  text: {
+    flex: 1,
+  },
 });
-export default AppTextInputStyles;
+export default AppPickerStyles;

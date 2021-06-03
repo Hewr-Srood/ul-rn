@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StatusBar, SafeAreaView } from 'react-native';
 import { hasNotch } from 'react-native-device-info';
+import AppPicker from './app/components/AppPicker/AppPicker';
 import AppTextInput from './app/components/AppTextInput/AppTextInput';
 import Card from './app/components/Card/Card';
 import CustomIcon from './app/components/CustomIcon/CustomIcon';
@@ -11,21 +12,49 @@ import DetailsListScreen from './app/screens/DetailsListScreen/DetailsListScreen
 import ListingsScreen from './app/screens/ListingsScreen/ListingsScreen';
 import MessagesScreen from './app/screens/MessagesScreen/MessagesScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen/ViewImageScreen';
+const categories = [
+  {
+    label: 'Furnitue',
+    value: 1,
+  },
+  {
+    label: 'Clothing',
+    value: 2,
+  },
 
-const App = () => (
-  <>
-    <StatusBar
-      backgroundColor="transparent"
-      translucent={true}
-      barStyle="dark-content"
-    />
+  {
+    label: 'Cameras',
+    value: 3,
+  },
 
-    {/* <ListingsScreen /> */}
-    <Screen>
-      <AppTextInput placeholder="Username" icon="email" />
-    </Screen>
+  {
+    label: 'Laptops',
+    value: 4,
+  },
+];
+const App = () => {
+  const [category, setCategory] = useState(categories[0]);
+  return (
+    <>
+      <StatusBar
+        backgroundColor="transparent"
+        translucent={true}
+        barStyle="dark-content"
+      />
 
-    {/* <ListItem
+      {/* <ListingsScreen /> */}
+      <Screen>
+        <AppPicker
+          selectedItem={category}
+          onSelectItem={(item) => setCategory(item)}
+          items={categories}
+          placeholder="category"
+          icon="apps"
+        />
+        <AppTextInput placeholder="Email" icon="email" />
+      </Screen>
+
+      {/* <ListItem
         title="My title "
         // subTitle="My subtitle"
         IconComponent={
@@ -37,7 +66,8 @@ const App = () => (
           />
         }
       /> */}
-  </>
-);
+    </>
+  );
+};
 
 export default App;
