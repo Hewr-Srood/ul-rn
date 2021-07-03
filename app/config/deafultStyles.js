@@ -3,9 +3,10 @@ import { Platform } from 'react-native';
 import colors from './colors';
 export default {
   colors,
-  tex: {
+  text: {
     color: colors.dark,
     fontSize: 18,
+    width: '94%',
     fontFamily: Platform.OS === 'android' ? 'Roboto' : 'Avenir',
   },
 };

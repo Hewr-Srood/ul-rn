@@ -10,8 +10,10 @@ import Screen from './app/components/Screen/Screen';
 import AccountScreen from './app/screens/AccountScreen/AccountScreen';
 import DetailsListScreen from './app/screens/DetailsListScreen/DetailsListScreen';
 import ListingsScreen from './app/screens/ListingsScreen/ListingsScreen';
+import LoginScreen from './app/screens/LoginScreen/LoginScreen';
 import MessagesScreen from './app/screens/MessagesScreen/MessagesScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen/ViewImageScreen';
+
 const categories = [
   {
     label: 'Furnitue',
@@ -41,9 +43,9 @@ const App = () => {
         translucent={true}
         barStyle="dark-content"
       />
-
+      <LoginScreen />
       {/* <ListingsScreen /> */}
-      <Screen>
+      {/* <Screen>
         <AppPicker
           selectedItem={category}
           onSelectItem={(item) => setCategory(item)}
@@ -52,7 +54,7 @@ const App = () => {
           icon="apps"
         />
         <AppTextInput placeholder="Email" icon="email" />
-      </Screen>
+      </Screen> */}
 
       {/* <ListItem
         title="My title "
