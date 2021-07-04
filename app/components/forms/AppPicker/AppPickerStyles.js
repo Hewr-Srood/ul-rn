@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import defaultStyles from '../../config/deafultStyles';
+import defaultStyles from '../../../config/defaultStyles';
 
 const AppPickerStyles = StyleSheet.create({
   container: {
@@ -22,6 +22,10 @@ const AppPickerStyles = StyleSheet.create({
   },
   icon: {
     marginRight: 10,
+  },
+  placeholder: {
+    color: defaultStyles.colors.medium,
+    flex: 1,
   },
   text: {
     flex: 1,

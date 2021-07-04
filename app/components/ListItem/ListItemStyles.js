@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native';
-import deafultStyles from '../../config/deafultStyles';
+import defaultStyles from '../../config/defaultStyles';
 
 const ListItemStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     padding: 15,
-    backgroundColor: deafultStyles.colors.white,
+    backgroundColor: defaultStyles.colors.white,
   },
   userContainer: {
     marginVertical: 40,
@@ -23,7 +23,7 @@ const ListItemStyles = StyleSheet.create({
     fontWeight: '500',
   },
   subTtile: {
-    color: deafultStyles.colors.medium,
+    color: defaultStyles.colors.medium,
   },
 });
 export default ListItemStyles;

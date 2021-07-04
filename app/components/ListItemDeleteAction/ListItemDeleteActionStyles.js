@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
-import deafultStyles from '../../config/deafultStyles';
+import defaultStyles from '../../config/defaultStyles';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: deafultStyles.colors.danger,
+    backgroundColor: defaultStyles.colors.danger,
     width: 70,
     justifyContent: 'center',
     alignItems: 'center',

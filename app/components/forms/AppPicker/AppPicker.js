@@ -8,9 +8,9 @@ import {
   Pressable,
 } from 'react-native';
 import { Icon } from 'react-native-elements';
-import deafultStyles from '../../config/deafultStyles';
-import AppText from '../AppText/AppText';
-import PickerItem from '../PickerItem/PickerItem';
+import defaultStyles from '../../../config/defaultStyles';
+import AppText from '../../AppText/AppText';
+import PickerItem from '../../PickerItem/PickerItem';
 import AppPickerStyles from './AppPickerStyles';
 
 const AppPicker = ({
@@ -27,18 +27,23 @@ const AppPicker = ({
         <View style={AppPickerStyles.container}>
           {icon && (
             <Icon
-              color={deafultStyles.colors.medium}
+              color={defaultStyles.colors.medium}
               style={AppPickerStyles.icon}
               type="material-community"
               name={icon}
               size={20}
             />
           )}
-          <AppText styles={AppPickerStyles.text}>
+
+          <AppText
+            styles={
+              selectedItem ? AppPickerStyles.text : AppPickerStyles.placeholder
+            }
+          >
             {selectedItem ? selectedItem.label : placeholder}
           </AppText>
           <Icon
-            color={deafultStyles.colors.medium}
+            color={defaultStyles.colors.medium}
             type="material-community"
             name="chevron-down"
             size={20}

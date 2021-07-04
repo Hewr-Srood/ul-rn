@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
-import deafultStyles from '../../config/deafultStyles';
+import defaultStyles from '../../config/defaultStyles';
 import AppButtonStyles from './AppButtonStyles';
 
 const AppButton = ({ title, onPress, color }) => {
@@ -8,7 +8,7 @@ const AppButton = ({ title, onPress, color }) => {
     <TouchableOpacity
       style={[
         AppButtonStyles.button,
-        { backgroundColor: color ? color : deafultStyles.colors.danger },
+        { backgroundColor: color ? color : defaultStyles.colors.danger },
       ]}
       onPress={onPress}
     >

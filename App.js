@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { StatusBar, SafeAreaView } from 'react-native';
 import { hasNotch } from 'react-native-device-info';
-import AppPicker from './app/components/AppPicker/AppPicker';
+
 import AppTextInput from './app/components/AppTextInput/AppTextInput';
 import Card from './app/components/Card/Card';
 import CustomIcon from './app/components/CustomIcon/CustomIcon';
+import { AppPicker } from './app/components/forms';
 import ListItem from './app/components/ListItem/ListItem';
 import Screen from './app/components/Screen/Screen';
 import AccountScreen from './app/screens/AccountScreen/AccountScreen';
 import DetailsListScreen from './app/screens/DetailsListScreen/DetailsListScreen';
+import ListingEditScreen from './app/screens/ListingEditScreen/ListingEditScreen';
 import ListingsScreen from './app/screens/ListingsScreen/ListingsScreen';
 import LoginScreen from './app/screens/LoginScreen/LoginScreen';
 import MessagesScreen from './app/screens/MessagesScreen/MessagesScreen';
@@ -43,7 +45,7 @@ const App = () => {
         translucent={true}
         barStyle="dark-content"
       />
-      <LoginScreen />
+      <ListingEditScreen />
       {/* <ListingsScreen /> */}
       {/* <Screen>
         <AppPicker
