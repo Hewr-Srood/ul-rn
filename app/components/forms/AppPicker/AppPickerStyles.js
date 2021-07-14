@@ -7,11 +7,11 @@ const AppPickerStyles = StyleSheet.create({
     borderRadius: 25,
     flexDirection: 'row',
     alignItems: 'center',
-    width: '100%',
     paddingHorizontal: 15,
     minHeight: 60,
     marginVertical: 10,
   },
+
   closeBtn: {
     alignItems: 'center',
   },
@@ -19,6 +19,9 @@ const AppPickerStyles = StyleSheet.create({
     paddingVertical: 20,
     fontSize: 18,
     color: defaultStyles.colors.danger,
+  },
+  flatListContainer: {
+    alignItems: 'center',
   },
   icon: {
     marginRight: 10,

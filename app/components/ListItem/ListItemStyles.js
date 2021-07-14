@@ -4,6 +4,7 @@ import defaultStyles from '../../config/defaultStyles';
 const ListItemStyles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    alignItems: 'center',
     padding: 15,
     backgroundColor: defaultStyles.colors.white,
   },
@@ -11,11 +12,13 @@ const ListItemStyles = StyleSheet.create({
     marginVertical: 40,
   },
   image: {
+    alignSelf: 'flex-start',
     width: 70,
     height: 70,
     borderRadius: 37,
   },
   detailsContainer: {
+    flex: 1,
     marginLeft: 10,
     justifyContent: 'center',
   },

@@ -46,6 +46,8 @@ const App = () => {
         barStyle="dark-content"
       />
       <ListingEditScreen />
+      {/* <MessagesScreen /> */}
+      {/* <ListingEditScreen /> */}
       {/* <ListingsScreen /> */}
       {/* <Screen>
         <AppPicker
@@ -57,7 +59,6 @@ const App = () => {
         />
         <AppTextInput placeholder="Email" icon="email" />
       </Screen> */}
-
       {/* <ListItem
         title="My title "
         // subTitle="My subtitle"

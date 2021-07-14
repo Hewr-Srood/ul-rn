@@ -15,16 +15,19 @@ import AppPickerStyles from './AppPickerStyles';
 
 const AppPicker = ({
   icon,
+  PickerItemComponent = PickerItem,
   items,
+  width = '100%',
   onSelectItem,
   selectedItem,
   placeholder,
+  numberOfColumns,
 }) => {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <>
       <TouchableWithoutFeedback onPress={() => setModalVisible(true)}>
-        <View style={AppPickerStyles.container}>
+        <View style={[AppPickerStyles.container, { width }]}>
           {icon && (
             <Icon
               color={defaultStyles.colors.medium}
@@ -50,7 +53,11 @@ const AppPicker = ({
           />
         </View>
       </TouchableWithoutFeedback>
-      <Modal visible={modalVisible} animationType="slide">
+      <Modal
+        visible={modalVisible}
+        animationType="slide"
+        style={{ backgroundColor: 'red' }}
+      >
         <Pressable
           style={AppPickerStyles.closeBtn}
           color="white"
@@ -58,11 +65,15 @@ const AppPicker = ({
         >
           <Text style={AppPickerStyles.closeText}>close</Text>
         </Pressable>
+
         <FlatList
           data={items}
+          contentContainerStyle={AppPickerStyles.flatListContainer}
+          numColumns={numberOfColumns}
           keyExtractor={(item) => item.value.toString()}
           renderItem={({ item }) => (
-            <PickerItem
+            <PickerItemComponent
+              item={item}
               label={item.label}
               onPress={() => {
                 setModalVisible(false);

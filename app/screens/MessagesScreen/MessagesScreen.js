@@ -15,7 +15,8 @@ const initialMessages = [
   {
     id: 2,
     title: 't2',
-    description: 'd2',
+    description:
+      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quod sed, quia minus nesciunt ad, deleniti officia architecto atque, esse doloribus velit odio nobis ab ratione natus. Cumque architecto totam similique blanditiis eum dignissimos quos corrupti consequatur, explicabo, magni exercitationem sit. Placeat, reprehenderit ad amet eius labore quidem fuga minima aspernatur hic illum corporis rem praesentium ullam nisi, veritatis velit expedita eligendi vero est consectetur laudantium, ea iusto quisquam nihil. Voluptatem, dolorum itaque, numquam pariatur officia, aspernatur impedit consequatur culpa dolorem vitae sit perspiciatis? Placeat ullam, numquam quia officiis recusandae laboriosam provident labore! Ab, quod tenetur possimus totam voluptatibus accusamus?',
     image: require('../../assets/user.jpg'),
   },
   {

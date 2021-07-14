@@ -6,9 +6,9 @@ import defaultStyles from '../../config/defaultStyles';
 
 import AppTextInputStyles from './AppTextInputStyles';
 
-const AppTextInput = ({ icon, ...inputProps }) => {
+const AppTextInput = ({ icon, width = '100%', ...inputProps }) => {
   return (
-    <View style={AppTextInputStyles.container}>
+    <View style={[AppTextInputStyles.container, { width }]}>
       {icon && (
         <Icon
           color={defaultStyles.colors.medium}

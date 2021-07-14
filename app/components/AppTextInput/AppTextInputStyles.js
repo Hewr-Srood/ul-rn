@@ -7,7 +7,6 @@ const AppTextInputStyles = StyleSheet.create({
     borderRadius: 25,
     flexDirection: 'row',
     alignItems: 'center',
-    width: '100%',
     paddingHorizontal: 15,
     minHeight: 60,
     marginVertical: 10,
